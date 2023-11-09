@@ -8,7 +8,7 @@ type ButtonProps = {
   styling: string;
 };
 
-// aynı dosyadki 2. bileşen
+// aynı dosyadaki 2. bileşen
 const SearchButton = ({ styling }: ButtonProps) => {
   return (
     <button className={`ml-3 z-10 ${styling}`}>

@@ -20,7 +20,7 @@ const DetailModal = ({ isOpen, closeModal, car }: DetailProps) => {
             exit={{ opacity: 0, scale: 0.5 }}
             className="p-6 relative bg-white w-full max-w-lg max-h-[90vh] rounded-2xl flex flex-col gap-5 shadow-xl overflow-auto"
           >
-            {/* kapatmaa butonu */}
+            {/* kapatma butonu */}
             <button
               onClick={closeModal}
               className="cursor-pointer p-1 absolute end-1 top-1 z-10 bg-white rounded-full"
@@ -59,7 +59,7 @@ const DetailModal = ({ isOpen, closeModal, car }: DetailProps) => {
               </div>
             </div>
 
-            {/* araba bilgilerini objeden dizye çevirip dönme */}
+            {/* araba bilgilerini objeden diziye çevirip dönme */}
             {Object.entries(car)
               .filter((i) => i[0] !== 'year')
               .map(([key, value]) => (

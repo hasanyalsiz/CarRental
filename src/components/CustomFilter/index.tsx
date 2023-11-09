@@ -13,14 +13,14 @@ const CustomFilter = ({ title, options }: CustomFilterType) => {
   const [params, setParams] = useSearchParams();
 
   useEffect(() => {
-    // url'e eklincek parametreyi belirleme
+    // url'e eklenecek parametreyi belirleme
     const key = title === 'Yakıt Tipi' ? 'fuel' : 'year';
 
-    // eğerki bir değer seçildyse onu url'e ekle
+    // eğer ki bir değer seçildiyse onu url'e ekle
     if (selected?.value) {
       params.set(key, selected.value.toLowerCase());
     } else {
-      //eğerki seçilen seçeneğin value'su boşsa url'den parametreyi kaldır
+      //eğer ki seçilen seçeneğin value'su boşsa url'den parametreyi kaldır
       params.delete(key);
     }
 

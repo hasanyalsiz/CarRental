@@ -30,6 +30,7 @@ const Card = ({ car }: CardProps) => {
         <span className="text-[19px] font-semibold">₺</span>
         {Math.round(Math.random() * 5000) + 500}
         <span className="text-[14px] self-end font-medium">/gün</span>
+        
       </p>
 
       {/* resim */}
